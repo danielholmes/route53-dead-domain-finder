@@ -1,20 +1,25 @@
 # Route53 Dead Domain Finder
 
-## Development
+## Requirements
 
-```
-virtualenv -p python3 venv
-source venv/bin/activate
+ - Python 2 or 3
+ - virtualenvwrapper
+
+
+## Setting Up Environment
+
+```bash
+mkvirtualenv route53-dead-domain-finder
 pip install -r requirements/development.txt
 ```
 
 
 ## Usage
 
-```
+```bash
 cp config.json.dist config.json
 vi config.json
-./run.py find --config=config.json
+python ./run.py find --config=config.json
 ```
 
 
